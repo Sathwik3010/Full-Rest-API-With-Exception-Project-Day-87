@@ -1,0 +1,51 @@
+·   	@RestControllerAdvice used for global error handling in the Spring MVC application.
+·        It allows you to handle exceptions across the whole application, not just to an individual controller and also has full control over the body of the response and the status code.
+·        GlobalExceptionHandler was annotated with @RestControllerAdvice, thus it is going to intercept exceptions from controllers across the application.
+
+·        The @ExceptionHandler is an annotation used to handle the specific exceptions and sending the custom responses to the client.
+Development Steps
+·   	Create your own exception classes:
+·       One Controller advice class per Application
+·       Write a @ ExceptionHandler method
+·   	Handle the Status Code based on our needs
+H2 Database:
+·   	H2 is an embedded database provided by Spring Boot
+·       H2 is a relational database management system written in java.
+·       It is in-memory database.
+·       H2 provides web console to maintain the database (or) Browser based console application.
+·       H2 database is available when you start your spring boot application and it will drop when you stop the spring boot application.
+·   	It is generally used in unit testing.
+·   	It stores data in memory, not persist the data on disk.
+ 
+ 
+ 
+Rest Client:
+·       Any application/Tool/Human which is cable of Sending HTTP Request can act as REST Client.
+o   Python project can act as REST Client
+o   Net Project can act as REST client
+o   Java Project Can act as REST Client
+o   Angular & React Projects also can act as REST Clients
+o   POSTMAN & Swagger-UI tools are acting as REST Clients.
+How to Develop REST Client using JAVA
+·   	Rest Client can be developed in 2 ways using Spring MVC
+1)  Rest Template
+2)  Web Client
+·       Rest Template supports Synchronous communication
+o   After Making a request it will block the thread until we receive the response
+·   	Web Client supports both synchronous and asynchronous Communication.
+o   Asynchronous communication means after making a request it won't wait for the response it will continue its execution further.
+o   Mono Same as RestTemplate – Single Request -> Single Response
+o   Flux – Single Request -> Multiple Responses
+Difference between SOAP vs REST SOAP (Simple Object Access Protocol):
+·       Protocol-based: Defines a strict protocol for describing messages, data types, and operations.
+·       XML-based: Uses XML for data exchange, ensuring platform and language independence.
+·       Stateful: Maintains context between requests and responses for complex transactions.
+·       Security features built-in: Provides WS-Security standards for authentication and authorization.
+·   	Mature and widely supported: Extensive tooling and libraries available.
+REST (Representational State Transfer):
+·       Architectural style: Defines principles for designing web services based on HTTP methods and resources.
+·   	Flexible data formats: Supports various formats like JSON, XML, plain text, etc.
+·       Stateless: Each request is independent and self-contained.
+·       Simple and lightweight: Easier to learn and implement compared to SOAP.
+·   	Scalable and efficient: Less overhead due to stateless nature.
+·   	Restful APIs are Simple: Used by the majority of modern web services and APIs.
